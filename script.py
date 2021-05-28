@@ -79,7 +79,7 @@ async def main():
                             chat_id=chat_id,
                             from_chat_id=channel,
                             parse_mode="md",
-                            caption=caption,
+                            caption=f"<code>{file_name}</code>",
                             message_id=message_id
                             )
                         await asyncio.sleep(0.2)
@@ -92,7 +92,7 @@ async def main():
                             chat_id=chat_id,
                             from_chat_id=channel,
                             parse_mode="md",
-                            caption=caption,
+                            caption=f"<code>{file_name}</code>",
                             message_id=message_id
                             )
                         await asyncio.sleep(0.2)

@@ -96,6 +96,13 @@ async def main():
                             message_id=message_id
                             )
                         await asyncio.sleep(0.2)
+                    await Data.collection.delete_one({
+                        'channel': channel,
+                        'message_id': message_id,
+                        'file_type': file_type,
+                        'methord': "bot",
+                        'use': "forward"
+                        })
                     mcount += 1
                     MessageCount += 1
                     print(f"Forwarded: {file_name})

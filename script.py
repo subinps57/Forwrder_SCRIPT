@@ -78,7 +78,6 @@ async def main():
                         await bot.copy_message(
                             chat_id=chat_id,
                             from_chat_id=channel,
-                            parse_mode="md",
                             caption=f"<code>{file_name}</code>",
                             message_id=message_id
                             )
@@ -86,12 +85,11 @@ async def main():
                     except FloodWait as e:
                         datetime_ist = datetime.now(IST)
                         ISTIME = datetime_ist.strftime("%I:%M:%S %p - %d %B %Y")
-                        await m.edit(text=f"Total Forwarded : <code>{MessageCount}</code>Sleeping for {e.x} Seconds\nLast Forwarded: <code>{file_name}</code>Last Forwarded at {ISTIME}")
+                        await m.edit(text=f"Total Forwarded : <code>{MessageCount}</code>\nSleeping for {e.x} Seconds\nLast Forwarded: <code>{file_name}</code>\nLast Forwarded at {ISTIME}")
                         await asyncio.sleep(e.x)
                         await bot.copy_message(
                             chat_id=chat_id,
                             from_chat_id=channel,
-                            parse_mode="md",
                             caption=f"<code>{file_name}</code>",
                             message_id=message_id
                             )

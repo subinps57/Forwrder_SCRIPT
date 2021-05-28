@@ -105,7 +105,7 @@ async def main():
                         })
                     mcount += 1
                     MessageCount += 1
-                    print(f"Forwarded: {file_name})
+                    print(f"Forwarded: {file_name}")
                     if mcount == 10:
                         try:
                             datetime_ist = datetime.now(IST)

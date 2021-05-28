@@ -21,7 +21,7 @@ SESSION="Forward"
 OWNER=626664225
 API_ID = 2736453
 API_HASH = "bb7205e4aeec61c00ef1dcb94d3f91f1"
-BOT_TOKEN=os.environ.get("BOT_TOKEN", 1889401159:AAELJrThf2gG_aS7qEq_frKC9gqhvGbT9DQ")
+BOT_TOKEN=os.environ.get("BOT_TOKEN", "1889401159:AAELJrThf2gG_aS7qEq_frKC9gqhvGbT9DQ")
 
 
 client = AsyncIOMotorClient(DATABASE_URI)

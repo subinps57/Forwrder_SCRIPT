@@ -98,6 +98,7 @@ async def main():
                         await asyncio.sleep(0.2)
                     mcount += 1
                     MessageCount += 1
+                    print(f"Forwarded: {file_name})
                     if mcount == 10:
                         try:
                             datetime_ist = datetime.now(IST)
